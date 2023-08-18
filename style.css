@@ -1,0 +1,103 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  user-select: none;
+
+  & body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, rgba(0,0,0,0.7),  rgba(0,0,0,0.7)), url(Assets/background.jpg);
+    background-size: cover;
+
+    .wrapper {
+      width: 90%;
+      max-width: 21rem;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      gap: 5rem;
+      align-items: center;
+      justify-content: center;
+
+      .info {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 1rem;
+        box-shadow: 0 0 0.125rem #fff;
+        padding: 0.5rem 1rem;
+      }
+
+      .box-container {
+        width: 100%;
+        aspect-ratio: 1/1;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 5%;
+        position: relative;
+  
+        .box {
+          width: 47.5%;
+          aspect-ratio: 1/1;
+          filter: brightness(39%);
+          cursor: pointer;
+        }
+  
+        .green {
+          background-color: green;
+          border-top-left-radius: 100%;
+          align-self: flex-start;
+        }
+  
+        .red {
+          background-color: red;
+          border-top-right-radius: 100%;
+          align-self: flex-start;
+        }
+  
+        .yellow {
+          background-color: yellow;
+          border-bottom-left-radius: 100%;
+          align-self: flex-end;
+        }
+  
+        .blue {
+          background-color: blue;
+          border-bottom-right-radius: 100%;
+          align-self: flex-end;
+        }
+
+        .flash {
+          filter: brightness(100%);
+          transform: scale(1.039);
+        }
+  
+        .name {
+          width: 45%;
+          aspect-ratio: 1/1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          background: black;
+          transform: translate(-50%, -50%);
+          border-radius: 50%;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-size: 1.5rem;
+        }
+      }
+
+      .highscore {
+        background: rgba(255, 255, 255, 0.15);
+        border-radius: 1rem;
+        box-shadow: 0 0 0.125rem #fff;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+}
